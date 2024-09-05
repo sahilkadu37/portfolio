@@ -1,0 +1,138 @@
+/* Reset some default styling */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+     background-color: #f4f4f4; /* Light grey background color for the entire page */
+    background-image: url('"C:\Users\hp\Downloads\coding.jpg"'); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+}
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+header {
+    background: #000000;
+    color: #CED2CC;
+    padding: 1rem;
+    text-align: center;
+}
+
+#about{
+display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.css-shadow {
+  width: 150px;
+  height: 150px;
+justify-content : center;
+  border-radius: 50%;
+  border: 2px solid #cddc39;
+  filter: drop-shadow(0 0 8px #ff5722);
+}
+
+header nav ul li a {
+    color: #FFC0CB;
+    text-decoration: none;
+}
+
+/* About section styles */
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+#myimage {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.about-text {
+    max-width: 600px; /* Adjust as needed */
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #FFC0CB;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+.icons .fa-brands{
+     color: #bbb;
+     font-size: 1.7rem;
+}
+.icons{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 3rem;
+}
+.icons .fa-brands:hover{
+     cursor: pointer;
+     background: linear-gradient(#fff, #3877ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+    #myimage {
+        margin: 0 0 1rem 0;
+    }
+}
